@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lol</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>r030</th>
+        <th>txt</th>
+        <th>rate</th>
+        <th>cc</th>
+        <th>exchangedate</th>
+    </tr>
+    <tr th:each="course : ${listCourses}">
+        <td th:text="${course.getR030()}"></td>
+        <td th:text="${course.getTxt()}"></td>
+        <td th:text="${course.getRate()}"></td>
+        <td th:text="${course.getCc()}"></td>
+        <td th:text="${course.getExchangedate()}"></td>
+    </tr>
+</table>
+<h1>
+    Леша пидор
+</h1>
+</body>
+</html>
